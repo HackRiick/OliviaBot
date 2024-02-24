@@ -28,7 +28,7 @@ def update_blocklist():
     removed_ids = set(blocklist).difference(message_ids)
     blocklist[:] = [id_ for id_ in blocklist if id_ not in removed_ids]
 
-    print("Güncellenmiş blocklist:", blocklist)
+    print("blocklist guncellendi:", blocklist)
 
 # reload command 
 @app.on_message(filters.command("reload"))
