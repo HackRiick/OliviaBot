@@ -36,7 +36,7 @@ def reload_command(client, message):
     user_id = message.from_user.id
     
     if not check_blocklist(user_id):
-        message.reply_text("Sizin kullanımınız yasaklanmıştır!")
+        message.reply_text("Sizin kullanımınız   yasaklanmıştır!")
         return
         
     update_blocklist()
